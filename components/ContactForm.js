@@ -56,7 +56,7 @@ export default function ContactForm() {
           
           {isSubmitted ? (
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-              Thank you for your submission! We'll contact you within 24 hours.
+              Thank you for your submission! We will contact you within 24 hours.
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -87,7 +87,7 @@ export default function ContactForm() {
               </div>
               
               <div>
-                <label htmlFor="company" className="block text-gray-700 mb-1">Company*</label>
+                <label htmlFor="company" className="block text-gray-700 mb-1">Company</label>
                 <input
                   type="text"
                   id="company"

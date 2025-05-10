@@ -16,15 +16,16 @@ export default function ChatWidget() {
   ];
 
   const mockResponse = (question) => {
-    const responses = {
-      "How do I sell my license?": "You can start by filling out our contact form with details about your license. Our team will then provide a valuation.",
-      "What types of licenses do you accept?": "We accept most major software licenses including Microsoft, Adobe, Autodesk, and Oracle.",
-      "How long does the process take?": "Typically, you'll receive a valuation within 24 hours. Payment is processed within 48 hours.",
-      "What payment methods do you offer?": "We offer payments via bank transfer, PayPal, or check."
-    };
-    
-    return responses[question] || "I'm sorry, I didn't understand that question. Could you try asking something else?";
+  const responses = {
+    "How do I sell my license?": "You can start by filling out our contact form with details about your license. Our team will then provide a valuation.",
+    "What types of licenses do you accept?": "We accept most major software licenses including Microsoft, Adobe, Autodesk, and Oracle.",
+    "How long does the process take?": "Typically, you&apos;ll receive a valuation within 24 hours. Payment is processed within 48 hours.",
+    "What payment methods do you offer?": "We offer payments via bank transfer, PayPal, or check."
   };
+
+  return responses[question] || "I am sorry, I didn&apos;t understand that question. Could you try asking something else?";
+};
+
 
   const handleSendMessage = () => {
     if (!inputValue.trim()) return;
@@ -58,7 +59,7 @@ export default function ChatWidget() {
           
           <div className="flex-1 p-3 overflow-y-auto">
             <div className="mb-4">
-              <p className="text-sm text-gray-500 mb-2">Hi! I'm your SoftSell assistant. How can I help you today?</p>
+              <p className="text-sm text-gray-500 mb-2">Hi! I am your SoftSell assistant. How can I help you today?</p>
               <div className="space-y-2">
                 {predefinedQuestions.map((question, index) => (
                   <button

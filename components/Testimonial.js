@@ -1,7 +1,7 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "SoftSell helped us recover over $50,000 in unused licenses we didn't even know we had! The process was seamless.",
+      quote: "SoftSell helped us recover over $50,000 in unused licenses we did not even know we had! The process was seamless.",
       name: "Sarah Johnson",
       role: "IT Director",
       company: "TechCorp Inc."
